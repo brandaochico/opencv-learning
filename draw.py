@@ -4,10 +4,10 @@ import numpy
 # Dimensões: Largura, Altura e Canais de Cores
 blank = numpy.zeros((500, 500, 3), dtype='uint8')
 
-# 1. Pintando a imagem vazia de verde
+# 1. Pintando a imagem vazia de azul
 # blank[intervalo y, intervalo x]
-# Coordenada y é invertida
-## blank[200:300, 300:400] = 0, 255, 0
+""" Coordenada y é invertida """
+blank[:] = 255, 0, 0
 
 ## cv.imshow('Green', blank)
 
